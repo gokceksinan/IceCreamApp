@@ -53,6 +53,8 @@ const Scoops = () => {
   // toplam fiyatı hesapla
   const total = basket.reduce((total, i) => total + i.amount * 20, 0);
 
+console.log(basket)
+
   return (
     <div>
       <h1>Dondurma Çeşitleri</h1>

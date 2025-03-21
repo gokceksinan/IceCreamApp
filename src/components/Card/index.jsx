@@ -20,7 +20,9 @@ const Card = ({ item, addToBasket, removeFromBasket, basket }) => {
         >
           Azalt
         </button>
-        <span className="fs-2">{basketItem?.amount || 0}</span>
+        <span data-testid="amount" className="fs-2">
+          {basketItem?.amount || 0}
+        </span>
         <button
           onClick={() => addToBasket(item)}
           className="btn btn-sm btn-outline-success"
